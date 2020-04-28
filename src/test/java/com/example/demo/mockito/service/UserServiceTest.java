@@ -1,7 +1,6 @@
 package com.example.demo.mockito.service;
 
 import com.example.demo.mockito.utils.AopTargetUtils;
-import org.junit.Assert;
 import org.junit.jupiter.api.*;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -43,10 +42,10 @@ class UserServiceTest {
     public void should_success_when_testUserService() {
 
         String result = userService.test();
-        Assert.assertEquals("db_data_custom-test", result);
+        Assertions.assertEquals("db_data_custom-test", result);
 
         result = userService.test();
-        Assert.assertEquals("next-test", result);
+        Assertions.assertEquals("next-test", result);
 
     }
 }
