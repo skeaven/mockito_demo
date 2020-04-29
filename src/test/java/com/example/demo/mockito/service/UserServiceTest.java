@@ -2,6 +2,7 @@ package com.example.demo.mockito.service;
 
 import com.example.demo.mockito.utils.AopTargetUtils;
 import org.junit.jupiter.api.*;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import static org.mockito.Mockito.*;
 class UserServiceTest {
 
     @Autowired
+    @InjectMocks
     private UserService userService;
 
     @Autowired
